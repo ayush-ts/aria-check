@@ -7,69 +7,120 @@
     <title>Document</title>
 </head>
 <body>
-       <!-- textarea -->
-      <div>
-        <label >textarea label</label>
-        <textarea  name="w3review" rows="4" cols="50">
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-    </textarea
-        >
+     <!-- textarea -->
 
-       <div>
-        <label for="w3review">textarea label</label>
-        <textarea id="w3review" name="w3review" rows="4" cols="50">
+    <!-- normal text area -->
+    <div>
+      <label>normal textarea label</label>
+      <textarea name="normaltext" rows="4" cols="50"> </textarea>
+    </div>
+
+    <!-- label after normal text area  -->
+    <div>
+      <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+      <label>label after normal text area</label>
+    </div>
+
+    <!-- label after and before normal text area  -->
+    <div>
+      <label>label before normal text area</label>
+      <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+      <label>label after normal text area</label>
+    </div>
+
+    <!-- span label before text area -->
+    <div>
+      <span>textarea span label</span>
+      <textarea name="w3review" rows="4" cols="50">
     At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
     </textarea
-        >
-  
-        <span>textarea label on span</span>
-        <div>
-          <textarea id="spantext" name="textspan" rows="4" cols="50">
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-    </textarea
-          >
-        </div>
-  
-        <span>textarea label on div</span>
-        <span>required *</span>
-        <textarea name="divtext" rows="4" cols="50">
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-    </textarea
-        >
-  
-        <label for="textareaforth">fourth textarea</label>
-        <textarea
-          id="textareaforth"
-          name="textareaforth"
-          rows="4"
-          cols="50"
-          placeholder="fill this field"
-        >
-        </textarea>
-  
-        <!-- button -->
-        <div>
-          <h1>First button</h1>
-          <button type="button" name="first button">Plain Button</button>
-        </div>
-        <div>
-          <h1>Second button</h1>
-          <button type="button" name="second button">Plain Button</button>
-        </div>
-        <div>
-          <h1>Third button</h1>
-          <button type="button" name="third button">Plain Button</button>
-        </div>
-        <br />
-        <br />
-        <br />
-  
-        <form action="/#" id="nameform">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" />
-        </form>
+      >
+    </div>
+
+    <!-- span out of the div -->
+    <span>textarea label on span</span>
+    <div>
+      <textarea name="textspan" rows="4" cols="50">
+textarea that has span outer  </textarea
+      >
+    </div>
+
+    <!-- spans as label for textarea  -->
+    <span>textarea label on div</span>
+    <span>required *</span>
+    <textarea name="divtext" rows="4" cols="50">
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  </textarea
+    >
+
+    <!-- text area that has placeholder -->
+    <textarea
+      name="textareaforth"
+      rows="4"
+      cols="50"
+      placeholder="fill this field"
+    >
+    </textarea>
+    <label>fourth textarea</label>
+
+    <!-- button -->
+    <div>
+      <label for="q" aria-labelledby="q" >First button</label>
+      <button id="q" type="button" name="first button">Plain Button</button>
+    </div>
+    <div>
+      <h1>Second button</h1>
+      <button type="button" name="second button">Plain Button</button>
+    </div>
+    <div>
+      <h1>Third button</h1>
+      <button type="button" name="third button">Plain Button</button>
+      <h1>Third button</h1>
+    </div>
+
+    <div>
+      <h1>Fourth button</h1>
+      <button type="button" name="forth button" disabled>Plain Button</button>
+      <h1>Fourth button</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <form action="/#" id="nameform">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" />
+    </form>
+
+    <button type="submit" form="nameform" value="Submit">Submit</button>
+    <div style="margin: 50px">
+      <audio controls>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mp3"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <form action="#">
+      <div>
+        <label>User ID:</label>
+        <input type="text" name="id" />
+
+        <label>Password:</label>
+        <input type="text" name="pass" />
+
+        <button type="reset" value="Reset">reset</button>
+        <button type="submit" value="Submit">Submit</button>
+      </div>
+    </form>
+
+    <div style="margin: 50px">
+      <audio controls>Your browser does not support the audio element.</audio>
+    </div>
   
         <button type="submit" form="nameform" value="Submit">Submit</button>
            <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
